@@ -1,0 +1,317 @@
+.cv {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+.header-topFR {
+  width: 100%;
+  text-align: center;
+  height: 25vh;
+  color: white;
+  background-image: url(/assets/cv.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.header-h1FR {
+  width: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+}
+
+/* ------------------------------------------------*/
+
+.top-infosFR {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ------------------------------------------------*/
+
+.profil-photo {
+  width: 250px;
+}
+
+.profil-photo img {
+  width: 100%;
+  margin-left: 60px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  transition: transform 0.8s ease;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.profil-photo:hover img {
+  transform: scale(1.2);
+}
+
+/* ------------------------------------------------*/
+
+.infosFR {
+  font-size: 23px;
+  float: right;
+  margin-right: 8vh;
+}
+
+.infosFR img {
+  width: 350px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.infosFR a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: all 1.3s ease;
+}
+
+.infosFR a:hover {
+  text-decoration: none;
+  color: #f7316b;
+  font-size: larger;
+}
+
+.infosFR p img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/* ------------------------------------------------*/
+
+.lang-linkFR-cv {
+  float: right;
+  margin-right: 72px;
+}
+
+.lang-linkFR-cv img {
+  width: 60px;
+  position: fixed;
+  padding-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+.right-containerFR {
+  display: grid;
+  float: right;
+  margin-top: 7vh;
+  margin-bottom: 11vh;
+}
+
+.qualificationsFR,
+.soft-qualificationsFR,
+.interets {
+  width: 40vh;
+  text-align: center;
+  float: right;
+  margin-right: 13vh;
+  margin-left: 5vh;
+}
+
+.soft-qualificationsFR,
+.interets {
+  margin-top: 13vh;
+}
+
+.progress-bar {
+  background-color: #1da1f2 !important;
+}
+
+.pbFR .progress-bar {
+  background-color: #f7316b !important;
+}
+
+.progress-bar-animated {
+  animation-direction: reverse !important;
+}
+
+.sous-qualFR,
+.soft-sous-qualFR {
+  padding: 10px;
+}
+
+.sous-qualFR p,
+.soft-sous-qualFR p {
+  margin-bottom: 5px;
+}
+
+/* ------------------------------------------------*/
+
+.experiencesFR {
+  margin-top: 60px;
+  margin-left: 60px;
+  width: 50%;
+}
+
+.experiencesFR:hover h2 {
+  color: #1da1f2;
+}
+
+.experiencesFR h2 {
+  margin-top: 30px;
+  transition: all 1s ease;
+}
+
+.experiencesFR h2::before {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  padding-bottom: 30px;
+  border-top: 3px solid #f7316b;
+}
+
+.last-pFR::after {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  padding-top: 30px;
+  border-bottom: 3px solid #f7316b;
+}
+
+.experiencesFR h3 {
+  font-size: 20px;
+}
+
+.experiencesFR span {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.experiencesFR h3::before {
+  content: "- ";
+  color: #f7316b;
+}
+
+.experiencesFR p a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: all 1.3s ease;
+}
+
+.experiencesFR p a:hover {
+  text-decoration: solid;
+  color: #f7316b;
+  font-size: larger;
+}
+
+/* ------------------------------------------------*/
+
+.interets-responsive {
+  display: none;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .cv {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .top-infosFR {
+    display: grid;
+  }
+
+  /* ------------------------------------------------*/
+
+  .profil-photo img {
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+
+  /* ------------------------------------------------*/
+
+  .infosFR {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .experiencesFR {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .experiencesFR h2::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    padding-bottom: 30px;
+    border-top: 3px solid #f7316b;
+  }
+
+  .last-pFR::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    padding-top: 31.5px;
+    border-bottom: 3px solid #f7316b;
+  }
+
+  /* ------------------------------------------------*/
+
+  .right-containerFR {
+    margin-top: 60px;
+    margin-bottom: 90px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------------*/
+
+  .qualificationsFR,
+  .soft-qualificationsFR {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ------------------------------------------------*/
+
+  .interets {
+    display: none;
+  }
+
+  /* ------------------------------------------------*/
+
+  .interets-responsive {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 90px;
+    width: 40vh;
+  }
+
+  .interets-responsive,
+  .soft-qualificationsFR {
+    margin-top: 6vh;
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 659px) {
+  .lang-linkFR-cv {
+    margin-top: 37px;
+  }
+}

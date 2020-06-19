@@ -1,0 +1,116 @@
+.frenchflag {
+  width: 70px;
+  margin-left: 20%;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+/* ------------------------------------------------*/
+
+.title,
+.title-short {
+  font-size: 34px;
+  color: #1da1f2;
+}
+
+.title-short {
+  display: none;
+  text-align: left;
+  float: left;
+}
+
+.title:after,
+.title-short::after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  display: block;
+  padding-top: 10px;
+  border-bottom: 2px solid #f7316b;
+}
+
+/* ------------------------------------------------*/
+
+.navbar {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 7px 9px -9px #777;
+}
+
+.nav-links {
+  color: black !important;
+  margin-left: 4%;
+  transition: all 0.8s ease;
+}
+
+.nav-links p {
+  margin: 0;
+}
+
+.nav-links:hover {
+  color: #f7316b !important;
+}
+
+.effect::after {
+  content: "";
+  height: 1px;
+  width: 1%;
+  display: block;
+  padding-top: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 1.2s ease;
+}
+
+.effect:hover::after {
+  width: 100%;
+  border-color: #f7316b;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 1380px) {
+  .nav-links {
+    margin-left: 2.5%;
+    color: black !important;
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 1330px) {
+  .nav-links {
+    margin-left: 2%;
+    color: black !important;
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 1230px) {
+  .nav-links {
+    margin-left: unset;
+    color: black !important;
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+  .frenchflag {
+    width: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 613px) {
+  .title {
+    display: none;
+  }
+  .title-short {
+    display: inline;
+  }
+}

@@ -1,0 +1,53 @@
+.contactFR {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ------------------------------------------------*/
+
+.header-contactFR {
+  width: 100%;
+  text-align: center;
+  height: 25vh;
+  color: white;
+  background-image: url(/assets/contactFR.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-h1-contactFR {
+  width: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+  color: black;
+}
+
+/* ------------------------------------------------*/
+
+.lang-linkFR-contact {
+  float: right;
+  margin-right: 75px;
+}
+
+.lang-linkFR-contact img {
+  width: 60px;
+  position: fixed;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .contactFR {
+    text-align: center;
+  }
+  /* ------------------------------------------------*/
+}
+
+@media only screen and (max-width: 659px) {
+  .lang-linkFR-contact {
+    margin-top: 37px;
+  }
+}

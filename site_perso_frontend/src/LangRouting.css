@@ -1,0 +1,95 @@
+.lang-routing {
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ------------------------------------------------*/
+
+.english,
+.french {
+  height: 51vh;
+  background-color: #1da1f2;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  display: inline-flex;
+  width: 100%;
+}
+
+.french {
+  margin-top: -10px;
+  background-color: #f7316b;
+}
+
+.english h1,
+.french h1 {
+  margin-top: 25vh;
+  transform: translateY(-50%);
+  text-decoration: none;
+}
+
+.french h1 a,
+.english h1 a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border-top: 4px solid;
+  transition: all 1.3s ease;
+}
+
+.english h1 a:hover {
+  color: #f7316b;
+  text-decoration: none;
+  border-bottom: 4px solid;
+}
+
+.french h1 a:hover {
+  color: #1da1f2;
+  text-decoration: none;
+  border-bottom: 4px solid;
+}
+
+/* ------------------------------------------------*/
+
+.maxime-fabre {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 60vh;
+  height: 30vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  transition: all 0.8s ease;
+}
+
+.maxime-fabre:hover {
+  width: 65vh;
+  height: 35vh;
+}
+
+.maxime-fabre p {
+  margin-top: 25%;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
+
+.maxime-fabre p img {
+  width: 30vh;
+  margin-top: 3vh;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 650px) {
+  .french h1 a,
+  .english h1 a {
+    border-top: unset;
+  }
+
+  /* ------------------------------------------------*/
+}

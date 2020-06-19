@@ -1,0 +1,55 @@
+.footer {
+  width: 100%;
+  background-color: #1da1f2;
+  color: white;
+  height: 25vh;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  display: inline-flex;
+  margin-top: 64px;
+}
+
+.footer img {
+  height: 80%;
+  margin: auto 0 auto auto;
+}
+
+/* ------------------------------------------------*/
+
+.copyright {
+  margin: auto;
+}
+
+.copyright p {
+  font-weight: 600;
+}
+
+.copyright a {
+  text-decoration: overline;
+  color: white;
+  transition: all 1s ease;
+}
+
+.copyright a:hover {
+  color: #f7316b;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 35vh;
+  }
+
+  .footer img {
+    margin: auto auto 10px;
+    height: 50%;
+  }
+}

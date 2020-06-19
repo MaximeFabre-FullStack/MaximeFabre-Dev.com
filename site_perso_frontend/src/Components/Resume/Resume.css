@@ -1,0 +1,320 @@
+.resume {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+.header-top {
+  width: 100%;
+  text-align: center;
+  height: 25vh;
+  color: white;
+  background-image: url(/assets/resume.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.header-h1 {
+  width: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+}
+
+/* ------------------------------------------------*/
+
+.top-infos {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ------------------------------------------------*/
+
+.profil-pic {
+  width: 250px;
+}
+
+.profil-pic img {
+  width: 100%;
+  margin-left: 60px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  transition: transform 0.8s ease;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.profil-pic:hover img {
+  transform: scale(1.2);
+}
+/* ------------------------------------------------*/
+
+.infos {
+  font-size: 23px;
+  margin-right: 60px;
+  height: auto;
+}
+
+.infos a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: all 1.3s ease;
+}
+
+.infos a:hover {
+  text-decoration: none;
+  color: #f7316b;
+  font-size: larger;
+}
+
+.infos img {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.infos p img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/* ------------------------------------------------*/
+
+.lang-link-resume {
+  float: right;
+  margin-right: 72px;
+}
+
+.lang-link-resume img {
+  width: 60px;
+  position: fixed;
+  padding-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+.right-container {
+  display: grid;
+  float: right;
+  margin-top: 7vh;
+  margin-bottom: 11vh;
+}
+
+.qualifications,
+.soft-qualifications,
+.interest {
+  width: 40vh;
+  text-align: center;
+  float: right;
+  margin-right: 13vh;
+  margin-left: 5vh;
+}
+
+.soft-qualifications,
+.interest {
+  margin-top: 13vh;
+}
+
+.progress-bar {
+  background-color: #1da1f2 !important;
+}
+
+.pb .progress-bar {
+  background-color: #f7316b !important;
+}
+
+.progress-bar-animated {
+  animation-direction: reverse !important;
+}
+
+.sous-qual,
+.soft-sous-qual {
+  padding: 10px;
+}
+
+.sous-qual p,
+.soft-sous-qual p {
+  margin-bottom: 5px;
+}
+
+/* ------------------------------------------------*/
+
+.experiences {
+  margin-top: 60px;
+  margin-left: 60px;
+  width: 50%;
+}
+
+.experiences:hover h2 {
+  color: #1da1f2;
+}
+
+.experiences h2 {
+  margin-top: 30px;
+  transition: all 1s ease;
+}
+
+.experiences h2::before {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  padding-bottom: 30px;
+  border-top: 3px solid #f7316b;
+}
+
+.last-p::after {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  padding-top: 30px;
+  border-bottom: 3px solid #f7316b;
+}
+
+.experiences h3 {
+  font-size: 20px;
+}
+
+.experiences span {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.experiences h3::before {
+  content: "- ";
+  color: #f7316b;
+}
+
+.experiences p a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: all 1.3s ease;
+}
+
+.experiences p a:hover {
+  text-decoration: solid;
+  color: #f7316b;
+  font-size: larger;
+}
+
+/* ------------------------------------------------*/
+
+.interest-responsive {
+  display: none;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .resume {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .top-infos {
+    display: grid;
+  }
+
+  /* ------------------------------------------------*/
+
+  .profil-pic img {
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+
+  /* ------------------------------------------------*/
+
+  .infos {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .lang-link {
+    margin-top: 37px;
+  }
+
+  /* ------------------------------------------------*/
+
+  .experiences {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .experiences h2::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    padding-bottom: 31.5px;
+    border-top: 3px solid #f7316b;
+  }
+
+  .last-p::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    padding-top: 31.5px;
+    border-bottom: 3px solid #f7316b;
+  }
+
+  /* ------------------------------------------------*/
+
+  .right-container {
+    margin-top: 60px;
+    margin-bottom: 90px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------------*/
+
+  .qualifications,
+  .soft-qualifications {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ------------------------------------------------*/
+
+  .interest {
+    display: none;
+  }
+
+  /* ------------------------------------------------*/
+
+  .interest-responsive {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 90px;
+    width: 40vh;
+  }
+
+  .interest-responsive,
+  .soft-qualifications {
+    margin-top: 6vh;
+  }
+}
+
+@media only screen and (max-width: 613px) {
+  .lang-link-resume {
+    margin-top: 37px;
+  }
+}

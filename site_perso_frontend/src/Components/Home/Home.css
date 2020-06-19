@@ -1,0 +1,121 @@
+.home {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+.lang-link-home {
+  float: right;
+  margin-right: 72px;
+}
+
+.lang-link-home img {
+  width: 60px;
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+/* ------------------------------------------------*/
+
+.header-home {
+  width: 100%;
+  text-align: center;
+  height: 35vh;
+  color: white;
+  background-image: url(/assets/welcome.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 
+.header-h1-home {
+  width: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  color: white;
+} */
+
+/* ------------------------------------------------*/
+
+.presentation {
+  display: flex;
+  margin: 60px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.presentation a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: all 1s ease;
+}
+
+.presentation a:hover {
+  text-decoration: none;
+  color: #f7316b;
+  font-size: large;
+}
+
+.presentation h2 {
+  margin-bottom: 30px;
+}
+
+.presentation img {
+  width: 50%;
+  margin-left: 45px;
+  margin-right: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+  transition: all 1.5s ease;
+}
+
+.presentation img:hover {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .home {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .presentation img {
+    width: 80vw;
+    margin: 20px 0;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 613px) {
+  .lang-link-home {
+    margin-top: 37px;
+  }
+
+  /* ------------------------------------------------*/
+}

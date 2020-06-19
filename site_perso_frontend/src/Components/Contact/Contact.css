@@ -1,0 +1,54 @@
+.contact {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+.header-contact {
+  width: 100%;
+  text-align: center;
+  height: 25vh;
+  color: white;
+  background-image: url(/assets/contact.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-h1-contact {
+  width: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+}
+
+/* ------------------------------------------------*/
+
+.lang-link-contact {
+  float: right;
+  margin-right: 75px;
+}
+
+.lang-link-contact img {
+  width: 60px;
+  position: fixed;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+  .contact {
+    text-align: center;
+  }
+  /* ------------------------------------------------*/
+}
+
+@media only screen and (max-width: 613px) {
+  .lang-link-contact {
+    margin-top: 37px;
+  }
+  /* ------------------------------------------------*/
+}

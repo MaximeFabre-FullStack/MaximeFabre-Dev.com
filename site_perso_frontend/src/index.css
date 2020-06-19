@@ -1,0 +1,15 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  background-color: #e6e6e6;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */

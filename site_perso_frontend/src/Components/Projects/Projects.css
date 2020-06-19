@@ -1,0 +1,53 @@
+.projects {
+  margin-top: 86px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------*/
+
+.lang-link-project {
+  float: right;
+  margin-right: 72px;
+}
+
+.lang-link-project img {
+  width: 60px;
+  position: fixed;
+  padding-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+.header-top-projects {
+  width: 100%;
+  text-align: center;
+  height: 25vh;
+  color: white;
+  background-image: url(/assets/cv.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.header-h1-projects {
+  width: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8vh;
+}
+
+/* ------------------------------------------------*/
+
+@media only screen and (max-width: 613px) {
+  .projects {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------*/
+
+  .lang-link-project {
+    margin-top: 37px;
+  }
+}
