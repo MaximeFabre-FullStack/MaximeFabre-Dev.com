@@ -39,6 +39,37 @@
 
 /* ------------------------------------------------*/
 
+.formFR {
+  margin: 75px 20%;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f7316b !important;
+  border-color: #f7316b !important;
+  width: 140px;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  line-height: 2.3 !important;
+  transition: all 1s ease !important;
+}
+
+.btn-primary:hover {
+  transform: scale(1.35) translateX(-35%) !important;
+  border-color: #fff;
+}
+
+/* ------------------------------------------------*/
+
 @media only screen and (max-width: 850px) {
   .contactFR {
     text-align: center;
