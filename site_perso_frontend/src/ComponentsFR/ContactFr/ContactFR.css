@@ -8,7 +8,7 @@
 .header-contactFR {
   width: 100%;
   text-align: center;
-  height: 25vh;
+  height: 35vh;
   color: white;
   background-image: url(/assets/contactFR.jpg);
   background-position: center;
@@ -20,7 +20,7 @@
   width: 30vh;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8vh;
+  padding-top: 13vh;
   color: black;
 }
 
@@ -38,9 +38,32 @@
 }
 
 /* ------------------------------------------------*/
+.contact-textFR {
+  margin: 75px 15%;
+  text-align: center;
+  font-size: larger;
+}
+
+.contact-textFR a {
+  text-decoration: none !important;
+  font: 700 !important;
+  transition: all 0.6s ease;
+}
+
+.contact-textFR a:hover {
+  color: #f7316b;
+}
+
+/* ------------------------------------------------*/
 
 .formFR {
   margin: 75px 20%;
+}
+
+.donnes {
+  width: 100%;
+  margin: -12px 0;
+  font-size: 13px;
 }
 
 .form-control:focus {
@@ -51,12 +74,20 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.none {
+  display: none !important;
+}
+
+.champs_invalide {
+  color: red;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #f7316b !important;
   border-color: #f7316b !important;
   width: 140px;
-  margin-top: 20px;
+  margin-top: 45px;
   margin-left: 50%;
   transform: translateX(-50%);
   line-height: 2.3 !important;
@@ -66,6 +97,10 @@
 .btn-primary:hover {
   transform: scale(1.35) translateX(-35%) !important;
   border-color: #fff;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #f7316b !important;
 }
 
 /* ------------------------------------------------*/

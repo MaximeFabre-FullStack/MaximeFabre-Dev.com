@@ -9,7 +9,7 @@
 .header-contact {
   width: 100%;
   text-align: center;
-  height: 25vh;
+  height: 35vh;
   color: white;
   background-image: url(/assets/contact.jpg);
   background-position: top;
@@ -21,7 +21,7 @@
   width: 30vh;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8vh;
+  padding-top: 13vh;
 }
 
 /* ------------------------------------------------*/
@@ -35,6 +35,73 @@
   width: 60px;
   position: fixed;
   margin-top: 10px;
+}
+
+/* ------------------------------------------------*/
+
+.contact-text {
+  margin: 75px 15%;
+  text-align: center;
+  font-size: larger;
+}
+
+.contact-text a {
+  text-decoration: none !important;
+  font: 700 !important;
+  transition: all 0.6s ease;
+}
+
+.contact-text a:hover {
+  color: #f7316b;
+}
+
+/* ------------------------------------------------*/
+
+.form {
+  margin: 75px 20%;
+}
+
+.data {
+  width: 100%;
+  margin: -12px 0;
+  font-size: 13px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.none {
+  display: none !important;
+}
+
+.champs_invalide {
+  color: red;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f7316b !important;
+  border-color: #f7316b !important;
+  width: 140px;
+  margin-top: 45px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  line-height: 2.3 !important;
+  transition: all 1s ease !important;
+}
+
+.btn-primary:hover {
+  transform: scale(1.35) translateX(-35%) !important;
+  border-color: #fff;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #f7316b !important;
 }
 
 /* ------------------------------------------------*/

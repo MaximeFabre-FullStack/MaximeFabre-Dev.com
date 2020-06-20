@@ -15,15 +15,6 @@ class CV extends Component {
     };
   }
 
-  count = () => {
-    setInterval(() => {
-      for (let progress = 50; progress < progress + 2; ) {
-        this.setState({ count: progress });
-      }
-    }, 1000);
-    return this.state.count;
-  };
-
   render() {
     return (
       <div className="cv">
@@ -72,7 +63,7 @@ class CV extends Component {
                 href="mailto:contact@maximefabre-dev.com,?subject=Dites%20moi%20tout!&body=Cher%20Mr%20Fabre,%20nous%20aimerions%20entrer%20en%20contact%20avec%20vous.%20Merci%20de%20nous%20recontacter%20-%20%20Cordialement."
                 className="mailtoFR"
               >
-                maxusdm06@gmail.com
+                contact@maximefabre-dev.com
               </a>
             </p>
             <p>

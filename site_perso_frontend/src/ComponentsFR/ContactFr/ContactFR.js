@@ -4,7 +4,7 @@ import FooterFR from "../FooterFR/FooterFR";
 import { Link } from "react-router-dom";
 
 import "./ContactFR.css";
-import { OverlayTrigger, Tooltip, Form, Button } from "react-bootstrap";
+import { OverlayTrigger, Tooltip, Form, Button, Badge } from "react-bootstrap";
 
 class ContactFR extends Component {
   constructor(props) {
@@ -13,12 +13,44 @@ class ContactFR extends Component {
       email: "",
       option: "Un(e) client(e) potentiel(le)",
       message: "",
+      version: "french",
+      display_email: "none",
+      display_message: "none",
     };
   }
 
   handle_changeFR = async (e) => {
+    // will define state values from form / input via name
+
     await this.setState({ [e.target.name]: e.target.value });
     console.log(this.state.email, this.state.option, this.state.message);
+  };
+
+  submit_formFR = async () => {
+    // if states empty badges will show up
+
+    if (this.state.email === "" && this.state.message === "") {
+      await this.setState({
+        display_email: "champs_invalide",
+        display_message: "champs_invalide",
+      });
+      return;
+    } else if (this.state.email === "") {
+      await this.setState({
+        display_email: "champs_invalide",
+        display_message: "none",
+      });
+      return;
+    } else if (this.state.message === "") {
+      await this.setState({
+        display_email: "none",
+        display_message: "champs_invalide",
+      });
+      return;
+    } else {
+      await this.setState({ display_email: "none", display_message: "none" });
+      console.log(this.state);
+    }
   };
 
   render() {
@@ -50,7 +82,23 @@ class ContactFR extends Component {
           </div>
         </div>
 
-        <Form className="formFR">
+        <div className="contact-textFR">
+          <p>
+            Vous voulez entrer en contact ? Vous etes au bon endroit, vous
+            pouvez m'envoyer un mail directement en cliquant ici{" "}
+            <a
+              href="mailto:contact@maximefabre-dev.com,?subject=Dites%20moi%20tout!&body=Cher%20Mr%20Fabre,%20nous%20aimerions%20entrer%20en%20contact%20avec%20vous.%20Merci%20de%20nous%20recontacter%20-%20%20Cordialement."
+              className="contact-lien"
+            >
+              contact@maximefabre-dev.com
+            </a>{" "}
+            ou au <span> +33 (0)6.99.03.61.97. </span> Vous pouvez sinon me
+            contacter via le formulaire ci-dessous, je vous recontacterais dans
+            les meilleurs delais.
+          </p>
+        </div>
+
+        <Form className="formFR" onSubmit={this.submit_formFR}>
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Votre adresse mail :</Form.Label>
             <Form.Control
@@ -59,6 +107,9 @@ class ContactFR extends Component {
               name="email"
               onChange={this.handle_changeFR}
             />
+            <Badge className={this.state.display_email}>
+              *Merci de renseigner une adresse mail.
+            </Badge>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Vous etes :</Form.Label>
@@ -87,8 +138,17 @@ class ContactFR extends Component {
               name="message"
               onChange={this.handle_changeFR}
             />
+            <Badge className={this.state.display_message}>
+              *Oups, on dirait qu'il manque quelque chose ici!
+            </Badge>
           </Form.Group>
-          <Button className="submit-button">C'est parti</Button>
+          <p className="donnes">
+            * les données de ce formulaire seront utilisées uniquement a des
+            fins professionnelles.
+          </p>
+          <Button className="submit-buttonFR" onClick={this.submit_formFR}>
+            C'est parti !
+          </Button>
         </Form>
 
         <FooterFR />

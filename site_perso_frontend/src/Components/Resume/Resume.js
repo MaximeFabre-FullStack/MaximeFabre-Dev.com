@@ -52,8 +52,8 @@ class Resume extends Component {
             </p>
             <p>
               <img src="/assets/email.png" alt="email-logo" />
-              <a href="mailto:maxusdm06@gmail.com,?subject=About%20you%20&body=Dear%20Mr%20Fabre,%20Could%20you%20contact%20us%20?%20-%20kind%20regards.">
-                maxusdm06@gmail.com
+              <a href="mailto:contact@maximefabre-dev.com,?subject=About%20you%20&body=Dear%20Mr%20Fabre,%20Could%20you%20contact%20us%20?%20-%20kind%20regards.">
+                contact@maximefabre-dev.com
               </a>
             </p>
             <p>
