@@ -47,8 +47,36 @@ class ContactFR extends Component {
         display_message: "champs_invalide",
       });
       return;
+    } else if (
+      localStorage.getItem("email") != null &&
+      localStorage.getItem("email") === this.state.email
+    ) {
+      // if localstorage messageSent && localstorage email == this.state.email, prompt to tell the a message has already been sent
+
+      const reponse = prompt(
+        "Un message a déjà été envoyé avec l'adresse " +
+          localStorage.getItem("email") +
+          ", voulez vous en envoyer un autre? (oui / non) "
+      );
+      if (reponse === "non") {
+        return;
+      } else {
+        // if all conditions ok, continue
+
+        await this.setState({
+          display_email: "none",
+          display_message: "none",
+        });
+        localStorage.setItem("messageSent", "true");
+        const mail = this.state.email;
+        localStorage.setItem("email", mail);
+        console.log(this.state);
+      }
     } else {
       await this.setState({ display_email: "none", display_message: "none" });
+      localStorage.setItem("messageSent", "true");
+      const mail = this.state.email;
+      localStorage.setItem("email", mail);
       console.log(this.state);
     }
   };
